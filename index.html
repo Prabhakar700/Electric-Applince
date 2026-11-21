@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The ultimate guide and service portal for electric machine repair in India. We specialize in industrial motors, transformers, VFDs, and heavy electrical machinery. 24/7 Support.">
+    <meta name="keywords" content="Electric machine repair India, electric motor repair services, industrial electrical equipment repair, heavy electrical machinery repair, electric motor rewinding experts, transformer repair">
+    <title>Expert Electric Machine Repair in India | Comprehensive Industrial Solutions</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #0b3d91; 
+            --secondary-color: #ff9900; 
+            --text-color: #333333;
+            --text-light: #555555;
+            --bg-light: #f4f7f6;
+            --bg-dark: #1a1a1a;
+            --white: #ffffff;
+            --whatsapp-green: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.8;
+            background-color: var(--white);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--primary-color);
+            line-height: 1.3;
+        }
+        
+        p { margin-bottom: 15px; font-size: 1.05rem; }
+        
+        ul { margin-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; font-size: 1.05rem; }
+
+        /* Navbar */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span { color: var(--secondary-color); }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover { color: var(--secondary-color); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(11, 61, 145, 0.9), rgba(11, 61, 145, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+            color: var(--white);
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--white);
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            color: #e0e0e0;
+        }
+
+        .cta-btn {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 18px 40px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+        }
+
+        .cta-btn:hover {
+            background: #e68a00;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 153, 0, 0.4);
+        }
+
+        /* Layout Containers */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 5%;
+        }
+
+        .bg-grey { background-color: var(--bg-light); }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Text Heavy Sections (For SEO and 2500 words) */
+        .content-block {
+            margin-bottom: 40px;
+        }
+        
+        .content-block h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Zigzag Layout for Services */
+        .zigzag-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            gap: 50px;
+        }
+
+        .zigzag-row:nth-child(even) { flex-direction: row-reverse; }
+
+        .zigzag-text { flex: 1.2; }
+        .zigzag-img { flex: 0.8; }
+
+        .zigzag-img img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.5s ease;
+        }
+
+        .zigzag-img img:hover { transform: scale(1.02); }
+
+        /* Grid Layouts for Industries & Process */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        /* Automated Review Slider */
+        .reviews-section {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 80px 0;
+            overflow: hidden;
+        }
+
+        .reviews-section .section-title, .reviews-section .section-subtitle {
+            color: var(--white);
+        }
+
+        .slider-wrapper {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider-track {
+            display: flex;
+            width: calc(450px * 6);
+            animation: scrollSlider 25s linear infinite;
+        }
+
+        .review-card {
+            width: 400px;
+            background: var(--white);
+            color: var(--text-color);
+            margin: 0 25px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            flex-shrink: 0;
+        }
+
+        .review-card i { color: #ffc107; margin-bottom: 15px; font-size: 1.2rem; }
+        .review-card p { font-style: italic; margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6; }
+        .review-card h4 { color: var(--primary-color); font-size: 1.2rem; }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        details {
+            background: var(--white);
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        details:hover { border-color: var(--secondary-color); }
+
+        summary {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker { display: none; }
+        
+        summary::after {
+            content: '\f067';
+            font-family: 'FontAwesome';
+            color: var(--secondary-color);
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after { content: '\f068'; transform: rotate(180deg); }
+        
+        details p {
+            margin-top: 20px;
+            color: var(--text-light);
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-dark);
+            color: var(--white);
+            padding: 60px 5% 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 { color: var(--secondary-color); margin-bottom: 20px; font-size: 1.5rem; }
+        .footer-col p, .footer-col a { color: #bbb; text-decoration: none; display: block; margin-bottom: 10px; transition: color 0.3s; }
+        .footer-col a:hover { color: var(--secondary-color); }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #777;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 40px;
+            right: 40px;
+            background-color: var(--whatsapp-green);
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes scrollSlider { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-450px * 3)); } }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+        @media (max-width: 992px) {
+            .zigzag-row, .zigzag-row:nth-child(even) { flex-direction: column; }
+            .hero h1 { font-size: 3rem; }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.2rem; }
+            .slider-track { width: calc(350px * 6); }
+            .review-card { width: 300px; padding: 25px; margin: 0 15px; }
+            .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; font-size: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-bolt"></i> Volt<span>Repair</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">The Breakdown Cost</a></li>
+                <li><a href="#services">Specialized Services</a></li>
+                <li><a href="#industries">Industries We Serve</a></li>
+                <li><a href="#process">Our Repair Process</a></li>
+                <li><a href="#guide">Troubleshooting Guide</a></li>
+                <li><a href="#faq">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Comprehensive Electric Machine Repair & Motor Rewinding in India</h1>
+        <p>Industrial electrical breakdowns don't wait for business hours. Every single minute your production line is down, your factory bleeds capital. We provide ultra-fast, highly reliable, and technically superior electrical machine repair services across the Indian subcontinent. From AC/DC servo motors to heavy industrial transformers and CNC control panels, we bring your machinery back to life.</p>
+        <a href="https://wa.me/919599209027" target="_blank" class="cta-btn"><i class="fab fa-whatsapp"></i> Chat with an Engineer Now</a>
+    </section>
+
+    <!-- Comprehensive About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">The Hidden Cost of Industrial Downtime</h2>
+        <p class="section-subtitle">Why choosing a local, uncertified mechanic for your heavy electrical machinery is the biggest mistake a factory owner can make.</p>
+        
+        <div class="content-block">
+            <p>Let’s have an honest conversation about factory operations in India. When a critical machine—whether it's a 200 HP induction motor driving your conveyor belt, or a VFD panel controlling your automated assembly line—suddenly stops, panic ensues. The immediate instinct is to call the nearest local electrician to get things running quickly. However, this is where most manufacturing plants make a critical, expensive error.</p>
+            
+            <p>Industrial electric machine repair is not about just replacing a burnt wire. It is an exact science. When a motor rewinding is done with inferior quality aluminum-mixed wire instead of 100% pure electrolytic copper, the motor loses its efficiency. It draws more current, increases your electricity bill exponentially, and is guaranteed to burn out again within a few months. This cycle of cheap repairs ultimately destroys the core of your machinery, leading to massive capital expenditure when you are forced to buy a brand new machine.</p>
+
+            <p><strong>This is where VoltRepair steps in.</strong> We are not just mechanics; we are industrial electrical engineers. We have built a pan-India network of certified repair facilities and mobile on-site troubleshooting teams. We understand that in cities like Delhi NCR, Mumbai, Ahmedabad, Chennai, and Pune, the manufacturing pace is relentless. Our mission is to provide OEM-standard (Original Equipment Manufacturer) repair services that not only fix the immediate fault but restore your electrical machines to their original factory efficiency. We conduct rigorous vibration analysis, thermal imaging, and load testing before we hand any equipment back to you.</p>
+        </div>
+    </section>
+
+    <!-- Deep Dive Services -->
+    <section id="services" class="container bg-grey" style="max-width: 100%; padding: 80px 5%;">
+        <div style="max-width: 1200px; margin: auto;">
+            <h2 class="section-title">Our Master-Class Electrical Repair Services</h2>
+            <p class="section-subtitle">A deep dive into our core competencies. We handle equipment that others declare "beyond repair".</p>
+
+            <!-- Service 1: Motor Rewinding -->
+            <div class="zigzag-row">
+                <div class="zigzag-text">
+                    <h3>1. Premium Electric Motor Rewinding & Rebuilding</h3>
+                    <p>Electric motors are the beating heart of any manufacturing plant. From single-phase water pump motors to massive three-phase industrial slip-ring motors and high-precision servo motors, we handle it all. Our motor rewinding process is meticulous. </p>
+                    <p>We completely strip down the motor and bake the stator in a controlled temperature oven to safely remove old resin without damaging the core laminations. We strictly use <strong>Class H and Class F insulation materials</strong> and 100% pure copper wire. After rewinding, the motor is vacuum pressure impregnated (VPI) with high-grade epoxy varnish to ensure it can withstand severe industrial environments, moisture, and high temperatures.</p>
+                    <p><strong>Common Motor Issues We Fix:</strong> Winding burnout due to phase loss, rotor bar cracking, worn-out housing, bearing journal damage, and excessive vibration.</p>
+                </div>
+                <div class="zigzag-img">
+                    <img src="https://images.unsplash.com/photo-1580983546059-3a32f9154f85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Electric Motor Rewinding India">
+                </div>
+            </div>
+
+            <!-- Service 2: Transformers -->
+            <div class="zigzag-row">
+                <div class="zigzag-text">
+                    <h3>2. Power & Distribution Transformer Maintenance</h3>
+                    <p>Your transformer is the gateway of power to your entire facility. A transformer failure doesn't just stop one machine; it blacks out your entire plant. Our pan-India transformer repair services cover everything from routine oil filtration to complete core rebuilding.</p>
+                    <p>Over time, transformer oil absorbs moisture and generates sludge, drastically reducing its dielectric strength. This leads to internal arcing and catastrophic failure. Our mobile oil filtration units can come to your site anywhere in India to dehydrate, degas, and filter your transformer oil while the transformer is energized. If your transformer has already suffered a short circuit, our heavy lifting workshop can rebuild the HV and LV coils, replace the gaskets to stop oil leakages, and conduct mandatory Megger and Ratio tests.</p>
+                    <p><strong>Key Transformer Services:</strong> Oil breakdown voltage (BDV) testing, silica gel breather replacement, tap changer repair, and bushing replacement.</p>
+                </div>
+                <div class="zigzag-img">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Industrial Transformer Repair">
+                </div>
+            </div>
+
+            <!-- Service 3: Panels & Automation -->
+            <div class="zigzag-row">
+                <div class="zigzag-text">
+                    <h3>3. CNC Panel, VFD, & PLC Troubleshooting</h3>
+                    <p>Modern factories rely heavily on automation. But when a printed circuit board (PCB) inside your Variable Frequency Drive (VFD) blows, or your PLC logic gets corrupted, mechanical mechanics are useless. You need electronics and automation experts.</p>
+                    <p>Our rapid-response automation team specializes in diagnosing control panel issues. We deal with complex wiring faults, blown contactors, faulty relays, and erratic servo drive behaviors. We understand the language of automated machinery. Whether your CNC machine is throwing an obscure error code, or your packaging machine's sensors have stopped communicating with the main panel, we have the diagnostic tools to pinpoint the faulty component on the micro-level, saving you from buying a costly new drive.</p>
+                    <p><strong>Supported Brands:</strong> Siemens, ABB, Allen-Bradley, Mitsubishi, Delta, and Fanuc.</p>
+                </div>
+                <div class="zigzag-img">
+                    <img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Electrical Control Panel Repair">
+                </div>
+            </div>
+            
+             <!-- Service 4: AMC -->
+             <div class="zigzag-row">
+                <div class="zigzag-text">
+                    <h3>4. Annual Maintenance Contracts (AMC) & Predictive Diagnostics</h3>
+                    <p>The most successful manufacturing plants don't wait for machines to break; they prevent the breakdown. Our Comprehensive and Non-Comprehensive Electrical AMC services are designed to give factory owners complete peace of mind.</p>
+                    <p>Under our AMC, our engineers visit your facility on a scheduled basis (monthly or quarterly). We don't just visually inspect; we use cutting-edge predictive maintenance technology. We use <strong>Thermal Imaging Cameras</strong> to scan your electrical panels and motors to identify "hot spots" before they turn into fires. We use <strong>Vibration Analysis Tools</strong> on your heavy motors and blowers to detect bearing wear months before the bearing actually shatters. By catching these anomalies early, we schedule the repair during your planned downtime, ensuring your production targets are never compromised.</p>
+                </div>
+                <div class="zigzag-img">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Electrical Machine AMC Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="container">
+        <h2 class="section-title">Industries We Empower Across India</h2>
+        <p class="section-subtitle">Different industries have different machinery. We have specialized teams for specific industrial sectors.</p>
+        
+        <div class="grid-3">
+            <div class="card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Textile & Garment Manufacturing</h3>
+                <p>Textile mills operate in highly dusty environments with continuous lint accumulation. We specialize in repairing high-speed spinning frame motors, loom control panels, and stenter machine electricals, ensuring they are sealed against dust ingress.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-industry"></i>
+                <h3>Plastic Injection Molding</h3>
+                <p>Plastic molding requires precise temperature control and massive hydraulic pressure driven by heavy electric motors. We troubleshoot extrusion machine heater bands, PLC controls, and repair high-torque hydraulic pump motors.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-hamburger"></i>
+                <h3>Food & Beverage Processing</h3>
+                <p>Hygiene and wash-down environments are tough on electricals. We repair stainless steel enclosed motors, conveyor belt drives, and packaging machine sensors. We ensure all repairs meet strict food-grade safety standards regarding lubricants and seals.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-hammer"></i>
+                <h3>Steel & Heavy Engineering</h3>
+                <p>Operating in extreme heat and heavy vibration. We repair massive crane slip-ring motors, heavy duty exhaust blowers, and high-voltage furnace transformers that endure punishing electrical loads.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-tint"></i>
+                <h3>Water Treatment & Pumping Stations</h3>
+                <p>Municipal and industrial water treatment relies on massive submersible and centrifugal pumps. We provide expert rewinding for high-HP pump motors, addressing water ingress issues and mechanical seal failures.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-print"></i>
+                <h3>Printing & Packaging</h3>
+                <p>High-speed synchronization is key here. We repair precise servo motors, stepper motors, and complex VFD synchronization panels that keep giant offset printing presses running flawlessly without paper jams.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Repair Process -->
+    <section id="process" class="container bg-grey" style="max-width: 100%; padding: 80px 5%;">
+        <div style="max-width: 1200px; margin: auto;">
+            <h2 class="section-title">Our Scientific Repair Protocol</h2>
+            <p class="section-subtitle">We don't guess. We test, diagnose, and rebuild following strict engineering protocols.</p>
+            
+            <div class="content-block" style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <p>When you hand over your expensive machinery to us, you need to know exactly what happens inside our workshop. Here is our transparent, 5-step repair process:</p>
+                <br>
+                <ul style="list-style-type: none; margin-left: 0;">
+                    <li style="margin-bottom: 25px;">
+                        <h4 style="font-size: 1.3rem; margin-bottom: 10px;"><i class="fas fa-search" style="color: var(--secondary-color); margin-right: 10px;"></i> Step 1: Initial Electrical & Mechanical Inspection</h4>
+                        We don't dismantle anything until we test it. We check the insulation resistance using a Megger, measure phase-to-phase resistance, and check for mechanical shaft run-out. We document the incoming condition meticulously.
+                    </li>
+                    <li style="margin-bottom: 25px;">
+                        <h4 style="font-size: 1.3rem; margin-bottom: 10px;"><i class="fas fa-tools" style="color: var(--secondary-color); margin-right: 10px;"></i> Step 2: Careful Dismantling & Root Cause Analysis</h4>
+                        The machine is disassembled using specialized pullers to avoid damaging bearing housings. We don't just look at *what* is broken; we determine *why* it broke. Did the motor burn due to a power surge, or did a failing bearing cause the rotor to rub against the stator? Finding the root cause prevents future failures.
+                    </li>
+                    <li style="margin-bottom: 25px;">
+                        <h4 style="font-size: 1.3rem; margin-bottom: 10px;"><i class="fas fa-cogs" style="color: var(--secondary-color); margin-right: 10px;"></i> Step 3: Precision Repair & Rewinding</h4>
+                        If rewinding is required, old coils are carefully recorded for turns and wire gauge. New coils are wound on automated CNC winding machines for perfect tension. Mechanical parts like worn bearing housings are built up using metal spray and machined back to exact OEM tolerances on our lathes.
+                    </li>
+                    <li style="margin-bottom: 25px;">
+                        <h4 style="font-size: 1.3rem; margin-bottom: 10px;"><i class="fas fa-microchip" style="color: var(--secondary-color); margin-right: 10px;"></i> Step 4: Assembly & Dynamic Balancing</h4>
+                        Rotors and armatures are dynamically balanced on computerized balancing machines to eliminate vibration. We install high-grade SKF or FAG bearings, heating them uniformly using induction heaters before sliding them onto the shaft. No hammers are ever used.
+                    </li>
+                    <li>
+                        <h4 style="font-size: 1.3rem; margin-bottom: 10px;"><i class="fas fa-clipboard-check" style="color: var(--secondary-color); margin-right: 10px;"></i> Step 5: Final Load Testing & Quality Assurance</h4>
+                        The assembled machine is run on our test bed. We monitor voltage, current, temperature rise, and vibration levels over several hours. Only when the machine passes these stringent parameters do we apply our industrial-grade paint and dispatch it back to your factory.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimate Troubleshooting Guide (High SEO Value) -->
+    <section id="guide" class="container">
+        <h2 class="section-title">The Ultimate Industrial Machine Troubleshooting Guide</h2>
+        <p class="section-subtitle">Are you facing an issue right now? Read our expert insights on the most common electrical machine problems.</p>
+
+        <div class="content-block">
+            <h3>1. Why is my Electric Motor Overheating?</h3>
+            <p>Heating is the number one killer of electric machines. For every 10°C rise above the motor's rated operating temperature, the insulation life is cut in half. Overheating is typically caused by three things: <strong>Overloading</strong> (the machine is being asked to do more mechanical work than it was designed for), <strong>Poor Ventilation</strong> (dust and debris have blocked the cooling fins or the cooling fan is broken), or <strong>Voltage Imbalance</strong>. Even a 3% voltage imbalance between your three phases can cause a 25% increase in heat generation. If you touch your motor and it is too hot to hold your hand on for more than a few seconds, you need to shut it down and call our team immediately.</p>
+            
+            <h3>2. What causes excessive Vibration and Noise?</h3>
+            <p>Electrical machines should run with a smooth hum. If you hear grinding, squealing, or feel heavy vibrations, mechanical failure is imminent. This is almost always related to bearings. Bearings fail due to lack of lubrication, over-lubrication (which blows out the seals), or misalignment between the motor shaft and the load it is driving. Another common cause of vibration is a "soft foot"—where the motor is not sitting perfectly flat on its mounting base, causing the frame to twist when the bolts are tightened. Our laser alignment tools can fix this instantly on-site.</p>
+            
+            <h3>3. The Motor trips the breaker as soon as it starts</h3>
+            <p>If your machine immediately trips the MCB or MCCB upon startup, you have a direct short circuit. This could be a "phase-to-phase" short (the insulation between two windings has melted away), or a "phase-to-ground" short (a winding has touched the metal casing of the motor). Do not attempt to reset the breaker and try again; you will only cause more explosive damage to the internals. You need an immediate Megger test (insulation resistance test) to confirm the integrity of the windings. Call our 24/7 emergency line, and we will dispatch a technician.</p>
+            
+            <h3>4. Control Panel VFD keeps throwing an "Over-Voltage" or "Under-Voltage" fault</h3>
+            <p>Variable Frequency Drives are highly sensitive to power quality. If your VFD trips on over-voltage during deceleration, your machine's load is acting like a generator (regenerative energy), and you may need a dynamic braking resistor installed. If it trips on under-voltage, you might have severe voltage dips in your factory's main power supply when other heavy machinery starts up. Our panel engineers can install line reactors and harmonic filters to clean up your power supply and keep your automated lines running smoothly.</p>
+        </div>
+    </section>
+
+    <!-- Automated Reviews Slider -->
+    <section id="reviews" class="reviews-section">
+        <h2 class="section-title">Success Stories & Client Testimonials</h2>
+        <p class="section-subtitle">Don't just take our word for it. Here is what leading Indian manufacturers have to say.</p>
+        
+        <div class="slider-wrapper">
+            <div class="slider-track">
+                <div class="review-card">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <p>"We run a continuous steel rolling mill in Mandi Gobindgarh. A critical 500 HP slip ring motor burnt out at 2 AM. We contacted VoltRepair through their emergency WhatsApp. Their team was on-site by 6 AM, lifted the motor, and we had it rewound, balanced, and installed back in record time. They saved us lakhs in downtime."</p>
+                    <h4>- Vikram S., Steel Plant Director</h4>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <p>"Our plastic injection molding CNC panels were constantly tripping during the summer months. Local electricians told us to buy new panels. VoltRepair's engineers came in, did a thorough thermal analysis, replaced some faulty capacitors on the VFD, and installed proper cabinet cooling. Problem solved permanently."</p>
+                    <h4>- Meera Industries, Gujarat</h4>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <p>"We signed a comprehensive AMC for all our 200+ electric motors and 3 distribution transformers across our textile facility in Tamil Nadu. The preventive maintenance they do, especially the vibration analysis and oil testing, is world-class. Breakdown rates have dropped by 90%."</p>
+                    <h4>- R. Krishnan, Maintenance Head</h4>
+                </div>
+                <!-- Duplicates for infinite scroll -->
+                <div class="review-card">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <p>"We run a continuous steel rolling mill in Mandi Gobindgarh. A critical 500 HP slip ring motor burnt out at 2 AM. We contacted VoltRepair through their emergency WhatsApp. Their team was on-site by 6 AM, lifted the motor, and we had it rewound, balanced, and installed back in record time. They saved us lakhs in downtime."</p>
+                    <h4>- Vikram S., Steel Plant Director</h4>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <p>"Our plastic injection molding CNC panels were constantly tripping during the summer months. Local electricians told us to buy new panels. VoltRepair's engineers came in, did a thorough thermal analysis, replaced some faulty capacitors on the VFD, and installed proper cabinet cooling. Problem solved permanently."</p>
+                    <h4>- Meera Industries, Gujarat</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extensive FAQ Section -->
+    <section id="faq" class="container bg-grey" style="max-width: 100%; padding: 80px 5%;">
+        <div class="faq-container">
+            <h2 class="section-title">Frequently Asked Questions (FAQs)</h2>
+            <p class="section-subtitle">Detailed answers to the most common queries regarding industrial electrical repair in India.</p>
+            
+            <details>
+                <summary>How quickly can your team reach our factory in case of an emergency breakdown?</summary>
+                <p>If your facility is located within major industrial hubs like Delhi NCR, Mumbai, Pune, Ahmedabad, or Chennai, our rapid response team can usually be on-site within 2 to 4 hours. For other locations across India, we arrange immediate dispatch of our engineering teams and can often reach within 12 to 24 hours depending on the logistics. We recommend utilizing our WhatsApp emergency line for the fastest response.</p>
+            </details>
+            <details>
+                <summary>Do you use aluminum or copper wire for motor rewinding?</summary>
+                <p>We strictly use <strong>100% pure electrolytic grade copper wire</strong> for all our motor rewinding services. Many local repair shops use aluminum wire or low-grade copper alloys to cut costs, which drastically reduces the motor's efficiency and lifespan. We provide a complete material guarantee, ensuring your motor retains its original OEM specifications and energy efficiency ratings.</p>
+            </details>
+            <details>
+                <summary>What is the difference between Class F and Class H insulation?</summary>
+                <p>Insulation classes determine the maximum temperature an electrical winding can safely withstand before failing. Class F insulation is rated for up to 155°C, which is standard for most industrial motors. Class H is rated for up to 180°C. For heavy-duty applications like steel mills, kilns, or areas with high ambient temperatures, we highly recommend and utilize Class H insulation to provide a robust safety margin against overheating and burnout.</p>
+            </details>
+            <details>
+                <summary>Can you repair obsolete or discontinued CNC control panels and VFDs?</summary>
+                <p>Yes. Finding replacement parts for machinery that is 15-20 years old can be impossible. Our automation and electronics repair lab specializes in component-level repair. Instead of replacing the entire motherboard of an obsolete drive, we trace the circuitry and replace the specific blown transistors, thyristors, or logic chips, saving you from a highly expensive full-system retrofit.</p>
+            </details>
+            <details>
+                <summary>What does an Annual Maintenance Contract (AMC) for electrical machines include?</summary>
+                <p>Our standard AMC includes regular scheduled visits by our certified technicians. It covers thorough visual inspections, cleaning of cooling fans and fins, checking electrical connections for tightness (loose connections cause arcing and fires), measuring and recording voltage/current parameters, megger testing for insulation health, thermal imaging of panels to detect hotspots, and greasing bearings according to exact ultrasonic measurements.</p>
+            </details>
+            <details>
+                <summary>How do I know if my transformer needs oil filtration?</summary>
+                <p>Transformer oil should ideally be tested once a year. If the Breakdown Voltage (BDV) drops below 30kV, or if the moisture content (PPM) goes high, filtration is immediately required. Visually, if the oil looks dark, cloudy, or if the silica gel in the breather has turned from blue to pink (or orange to white, depending on the type), it means moisture has entered the system and you need our filtration services to prevent an internal short circuit.</p>
+            </details>
+            <details>
+                <summary>Is on-site repair possible for heavy machinery?</summary>
+                <p>Yes, absolutely. We understand that moving a 5-ton motor or a massive transformer is logistically difficult and expensive. We have fully equipped mobile service vans. We conduct vibration analysis, laser alignment, bearing replacements, panel troubleshooting, and transformer oil filtration right on your factory floor. Only complex jobs like full rewinding or core rebuilding require transporting the unit to our specialized workshops.</p>
+            </details>
+            <details>
+                <summary>Do you provide a warranty on your repair work?</summary>
+                <p>Yes. We stand firmly behind the quality of our engineering. We provide a standard warranty on all our rewinding and major repair services. The specific duration of the warranty depends on the type of repair and the condition of the machine, but it gives you complete peace of mind that if an issue arises due to our workmanship, we will fix it at zero additional cost to you.</p>
+            </details>
+            <details>
+                <summary>How does vibration analysis save money?</summary>
+                <p>Vibration analysis is like an ECG for your machines. By placing sensors on the motor housing, our software can analyze the frequency of vibrations. It can tell us exactly if a bearing is starting to pit, if the shaft is bent, or if the rotor is out of balance. Finding this out *before* the bearing shatters means we can replace a ₹2,000 bearing during a planned Sunday shutdown, rather than dealing with a destroyed rotor, damaged stator, and days of lost production worth lakhs on a busy Tuesday.</p>
+            </details>
+            <details>
+                <summary>Why should we choose VoltRepair over our local industrial electrician?</summary>
+                <p>Local electricians are great for basic wiring and lighting. But industrial machines require engineering precision. We bring ISO-standard processes, computerized testing equipment (like surge testers and dynamic balancers), high-temperature vacuum varnishing, and deep expertise in electronics and automation. Choosing us means you get corporate-level accountability, transparent pricing, pan-India support, and machines that run efficiently for years, not just weeks.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><i class="fas fa-bolt"></i> VoltRepair</h3>
+                <p>India's leading network for industrial electrical machine repair, motor rewinding, and automation troubleshooting. We keep the nation's industries running.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Our Core Services</h3>
+                <a href="#services">Electric Motor Rewinding</a>
+                <a href="#services">Transformer Repair</a>
+                <a href="#services">VFD & Panel Troubleshooting</a>
+                <a href="#services">Machine AMC Contracts</a>
+                <a href="#guide">Preventative Maintenance</a>
+            </div>
+            <div class="footer-col">
+                <h3>Major Service Hubs</h3>
+                <a href="#">Delhi NCR & North India</a>
+                <a href="#">Mumbai, Pune & West India</a>
+                <a href="#">Ahmedabad & Gujarat</a>
+                <a href="#">Chennai, Bangalore & South India</a>
+            </div>
+            <div class="footer-col">
+                <h3>Emergency Contact</h3>
+                <p><i class="fas fa-phone"></i> +91-9599209027</p>
+                <p><i class="fab fa-whatsapp"></i> Chat via WhatsApp for fastest response.</p>
+                <p><i class="fas fa-envelope"></i> support@voltrepairindia.com</p>
+                <p>24/7 Breakdown Assistance Available</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VoltRepair Industrial Electrical Services India. All Rights Reserved. Designed for maximum factory efficiency.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/919599209027" class="whatsapp-float" target="_blank" aria-label="Chat with an engineer instantly on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
